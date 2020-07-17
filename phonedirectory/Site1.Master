@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="phonedirectory.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="Label1" runat="server" BackColor="Red" BorderColor="Black" BorderStyle="Solid" BorderWidth="10px" ForeColor="#000066" style="text-align: center" Text=" PHONE DIRECTORY.com" Width="444px"></asp:Label>
+            <asp:Button ID="search" runat="server" BorderStyle="Solid" OnClick="Button1_Click" Text="Search emailID" />
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" BackColor="Yellow" BorderColor="Black" BorderStyle="Solid" NavigateUrl="~/register.aspx">Add New Contact</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#000066" BorderColor="Black" BorderStyle="Solid" ForeColor="Yellow" NavigateUrl="~/update.aspx">Update Contact</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" BackColor="Lime" BorderColor="Black" BorderStyle="Solid" ForeColor="Black" NavigateUrl="~/delete.aspx">Delete Contact</asp:HyperLink>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
